@@ -43,11 +43,25 @@ function clearDropNavigation() {
 	}
 }
 /*drop navigation end*/
+/*scroll to section*/
+function scrollToSection() {
+	$('.nav-list').on('click', 'a[href^="#"]', function(){
+		var scroll_el = $(this).attr('href');
+		var res = scroll_el.replace("#", "");
+		console.log(res);
+		if ($(scroll_el).length != 0) {
+			$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
+		}
+		return false;
+	});
+}
+/*scroll to section end*/
 /** ready/load/resize document **/
 
 $(document).ready(function () {
 	dropNavigation();
 	placeholderInit();
+	scrollToSection();
 });
 $(window).load(function () {
 	$('body').addClass('load-ready');
