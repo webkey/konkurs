@@ -39,6 +39,7 @@ function clearDropNavigation() {
 
 	if (dropNav.attr('style') && btnMenu.is(':hidden')) {
 		dropNav.attr('style', '');
+		btnMenu.removeClass('active');
 	}
 }
 /*drop navigation end*/
