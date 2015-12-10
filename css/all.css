@@ -323,21 +323,16 @@ img{
 	position: absolute;
 	left: 50%;
 	bottom: 0;
-	height: 447px;
 	width: 641px;
+	background: url(../img/bg-intro.png) no-repeat 0 100%;
 	margin: 0 0 -41px -323px;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
 .sect-intro-bg:before{
 	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: url(../img/bg-intro.png) no-repeat 0 100%;
-	z-index: 2;
+	display: block;
+	padding: 69.7% 0 0;
 }
 /*background section INTRO end*/
 
@@ -377,6 +372,7 @@ img{
 	padding: 0 20px 39px;
 	margin: 0 auto;
 	max-width: 830px;
+	text-align: center;
 }
 /*top item*/
 .top-item{
@@ -542,11 +538,13 @@ img{
 	background: url(../img/rules.png) no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
 }
 .sect-rules-bg:before{
 	content: "";
 	display: block;
-	padding-top: 152.4%;
+	padding-top: 94.8%;
 }
 .sect-rules-title{ padding: 0 0 40px; }
 .sect-rules-title h2{
@@ -588,6 +586,28 @@ img{
 
 @media only screen and (max-width: 959px){
 	/*header holder*/
+	/*main navigation*/
+	.nav-list li{
+		margin: 0 10px;
+	}
+	.nav-list li a:hover:before, .nav-list li.active > a:before {
+		left: -8px;
+		right: -8px;
+	}
+	/*main navigation end*/
+	/*header holder end*/
+	/*SECTION RULES*/
+	.sect-rules-bg{
+		top: 109px;
+		left: -33px;
+	}
+	.sect-rules-text{
+		text-shadow: 1px 1px 0 #39bded;
+	}
+	/*SECTION RULES end*/
+}
+@media only screen and (max-width: 767px){
+	/*header holder*/
 	.header-holder{
 		padding: 10px 0 0;
 	}
@@ -611,7 +631,7 @@ img{
 		margin: 0;
 		clear: both;
 		display: none;
-		padding: 0 0 20px;
+		padding: 0 0 15px;
 		-webkit-transition: opacity 0.2s;
 		transition: opacity 0.2s;
 	}
@@ -627,7 +647,7 @@ img{
 		opacity: 1;
 	}
 	.nav-list{
-		padding: 8px 0 20px;
+		padding: 8px 0;
 	}
 	.nav-list li{
 		display: block;
@@ -653,37 +673,45 @@ img{
 	/*main navigation end*/
 	/*header options end*/
 	/*header holder end*/
-	/*SECTION RULES*/
-	.sect-rules-bg{
-		top: 85px;
-	}
-	/*SECTION RULES end*/
-}
-@media only screen and (max-width: 767px){
-	/*SECTION INTRO*/
-	.sect-intro-bg{
-		margin-left: -500px;
-	}
-	/*SECTION INTRO end*/
 
-	/*SECTION PAIRS*/
-	/*SECTION PAIRS end*/
+	/*SECTION FOR PAIRS*/
+	.top-list{ margin: 0; }
+	.top-list > li{ width: 50%; }
+	/*SECTION FOR PAIRS end*/
+
+	/*SECTION FOR REFOVOD*/
+	.refovod-list{ margin: 0; }
+	.refovod-list > li{ width: 50%; }
+	/*SECTION FOR REFOVOD end*/
 
 	/*SECTION RULES*/
 	.sect-rules .max-wrap{
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.sect-rules-holder{
+		min-height: 612px;
+	}
 	.sect-rules-bg{
 		max-width: none;
-		right: 50%;
-		margin-right: -380px;
+		top: 109px;
+		left: -77px;
+		opacity: 0.7;
+	}
+	.sect-rules-content {
+		padding: 0 20px;
+	}
+	.sect-rules-text {
+		width: 409px;
+		max-width: 50%;
+		margin: 0 0 41px auto;
 	}
 	/*SECTION RULES end*/
 }
 @media only screen and (max-width: 639px){
-	h2{
-		font-size: 34px;
+	h2,
+	.sect-title h2{
+		font-size: 32px;
 	}
 	/*logo*/
 	.logo{
@@ -692,6 +720,9 @@ img{
 	}
 	/*logo end*/
 	/*SECTION INTRO*/
+	.sect-intro-holder{
+		padding-bottom: 80%;
+	}
 	.sect-intro-title,
 	.sect-intro-text{
 		padding-left: 0;
@@ -702,23 +733,55 @@ img{
 		line-height: 30px;
 	}
 	.sect-intro-bg{
-		margin-left: -350px;
+		margin-left: 0;
+		left: 50%;
+		width: 110%;
+		-webkit-transform: translateX(-45%);
+		-ms-transform: translateX(-45%);
+		transform: translateX(-45%);
+		max-width: 641px;
+		bottom: 35px;
 	}
 	/*SECTION INTRO end*/
-	/*SECTION PAIRS*/
-	.top-item{
-		padding-bottom: 50px;
+
+	/*SECTION FOR PAIRS*/
+	.top-list > li{
 		width: auto;
+		padding-bottom: 50px;
 	}
-	.top-item-text{
-		min-height: 0;
+	.players-tbl{
+		width: 100%;
+		max-width: 458px;
 	}
-	/*SECTION PAIRS end*/
+	.players-tbl td{
+		font-size: 28px;
+		line-height: 32px;
+	}
+	/*SECTION FOR PAIRS end*/
+
+	/*SECTION FOR REFOVOD*/
+	.refovod-list > li{
+		width: auto;
+		padding-bottom: 50px;
+	}
+	/*SECTION FOR REFOVOD end*/
+
 	/*SECTION RULES*/
+	.sect-rules-holder{
+		min-height: 0;
+		padding: 72px 0 53px;
+	}
 	.sect-rules-bg{
-		margin-right: -350px;
+		margin-right: 0;
 		opacity: 0.3;
-		top: -5px;
+		height: auto;
+		width: 100%;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		display: none;
 	}
 	.sect-rules-content{
 		padding: 0 20px;
@@ -726,7 +789,7 @@ img{
 	.sect-rules-text{
 		width: auto;
 		max-width: none;
-		color: #000;
+		margin: 0;
 	}
 	/*SECTION RULES end*/
 }
