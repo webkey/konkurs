@@ -668,13 +668,8 @@ img{
 		display: inline;
 		padding: 0;
 	}
-	.nav-list li a:hover,
-	.nav-list li.active a{
-		color: #ed4c14;
-	}
-	.nav-list li.active a{
-		font-weight: bold;
-	}
+	.nav-list li.active a{ color: #ed4c14; }
+	.nav-list li.active a{ font-weight: bold; }
 	/*main navigation end*/
 	/*header options end*/
 	/*header holder end*/
