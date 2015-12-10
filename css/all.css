@@ -27,7 +27,7 @@ h3{
 	font: bold 15px/24px 'Open Sans', Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	color: #000;
-	padding: 0 0 15px;
+	padding: 0 0 19px;
 }
 h4{
 	font-size: 14px;
@@ -100,10 +100,11 @@ img{
 .header{
 	position: relative;
 	z-index: 5;
+	border-bottom: 2px solid #f3f3f1;
 }
 /*header holder*/
 .header-holder{
-	padding: 29px 0 24px;
+	padding: 29px 0 22px;
 }
 .header-holder:before,
 .header-holder:after{
@@ -221,7 +222,7 @@ img{
 /*logo end*/
 /*header options*/
 .header-options{
-	margin: 0 -15px 0 160px;
+	margin: 0 -3px 0 160px;
 	text-align: right;
 	font-size: 0;
 	letter-spacing: -4px;
@@ -236,7 +237,7 @@ img{
 }
 .nav-list li{
 	display: inline-block;
-	margin: 0 15px;
+	margin: 0 14px;
 }
 .nav-list li a{
 	display: inline-block;
@@ -324,7 +325,7 @@ img{
 	bottom: 0;
 	height: 447px;
 	width: 641px;
-	margin: 0 0 -41px -320px;
+	margin: 0 0 -41px -323px;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -339,8 +340,9 @@ img{
 	z-index: 2;
 }
 /*background section INTRO end*/
+
 .sect-intro-holder{
-	padding: 67px 0 343px;
+	padding: 67px 0 353px;
 	position: relative;
 }
 .sect-intro-title{
@@ -358,7 +360,9 @@ img{
 	font-size: 15px;
 	line-height: 24px;
 	text-align: center;
-	padding: 0 55px 34px;
+	padding: 0 20px 34px;
+	max-width: 870px;
+	margin: 0 auto;
 }
 /*SECTION INTRO end*/
 
@@ -366,23 +370,22 @@ img{
 .sect-pairs{
 	background: #fff;
 }
-.sect-pairs-holder{
-	padding: 35px 0 52px;
-}
-.sect-pairs-title{
-	padding: 0 0 25px;
-}
+.sect-pairs-holder{ padding: 56px 0 51px; }
+.sect-pairs-title{ padding: 0 0 23px; }
+.sect-pairs-title h2{ padding: 0 0 20px; }
 .sect-pairs-text{
-	padding: 0 0 34px;
+	padding: 0 20px 39px;
+	margin: 0 auto;
+	max-width: 830px;
 }
 /*top item*/
 .top-item{
 	text-align: center;
-	padding: 0 0 30px;
+	padding: 0;
 }
 .top-item-img{
 	position: relative;
-	margin: 0 0 17px;
+	margin: 0 0 20px;
 	border-radius: 50%;
 }
 .top-item-rate{
@@ -393,8 +396,8 @@ img{
 }
 .top-item-rate>span{
 	position: relative;
-	top: -11px;
-	font-size: 24px;
+	top: -12px;
+	font-size: 21px;
 }
 .top-item-img img{
 	border-radius: 50%;
@@ -403,7 +406,7 @@ img{
 	display: block;
 	font: 36px/40px 'Roboto', Arial, Helvetica, sans-serif;
 	color: #000;
-	padding: 0 0 8px;
+	padding: 0 0 6px;
 }
 .top-item-text{
 	max-width: 250px;
@@ -421,7 +424,7 @@ img{
 	position: relative;
 	text-align: center;
 	padding: 0 0 2px;
-	margin: 0 -14px;
+	margin: 0 -13px;
 	font-size: 0;
 	letter-spacing: -4px;
 }
@@ -431,21 +434,21 @@ img{
 	vertical-align: top;
 	font-size: 15px;
 	letter-spacing: normal;
-	padding: 0 14px 30px;
+	padding: 0 13px 42px;
 }
 .top-item-01 .top-item-rate{
-	left: 50%;
-	top: 50%;
+	left: 36.5%;
+	top: 53.5%;
 	color: #fd3c00;
 }
 .top-item-02 .top-item-rate{
-	left: 50%;
-	top: 50%;
+	left: 44.7%;
+	top: 64.1%;
 	color: #56bdfa;
 }
 .top-item-03 .top-item-rate{
-	left: 50%;
-	top: 50%;
+	left: 45%;
+	top: 47.2%;
 	color: #cc7414;
 }
 /*top list end*/
@@ -462,7 +465,7 @@ img{
 }
 .players-tbl td{
 	font: 300 36px/40px 'Roboto', Arial, Helvetica, sans-serif;
-	padding: 2px 16px;
+	padding: 5px 13px 6px;
 	border-bottom: 9px solid #fff;
 }
 .players-tbl .gold-place td{
@@ -479,15 +482,15 @@ img{
 /*SECTION PAIRS end*/
 
 /*SECTION FOR REFOVOD*/
+.sect-refovod{ background: #f3f3f1; }
+.sect-refovod-holder{ padding: 52px 0 29px; }
+.sect-refovod-title{ padding: 0 0 23px; }
+.sect-refovod-title h2{ padding: 0 0 20px; }
 .sect-refovod-text{
+	padding: 0 20px 33px;
+	margin: 0 auto;
+	max-width: 880px;
 	text-align: center;
-	padding: 0 0 34px;
-}
-.sect-refovod{
-	background: #f3f3f1;
-}
-.sect-refovod-holder{
-	padding: 55px 0 40px;
 }
 /*refovod list*/
 .refovod-list{
@@ -495,7 +498,7 @@ img{
 	position: relative;
 	text-align: center;
 	padding: 0 0 2px;
-	margin: 0 -14px;
+	margin: 0 -13px;
 	font-size: 0;
 	letter-spacing: -4px;
 }
@@ -505,16 +508,16 @@ img{
 	vertical-align: top;
 	font-size: 15px;
 	letter-spacing: normal;
-	padding: 0 14px 30px;
+	padding: 0 13px 30px;
 }
 .refovod-item-01 .top-item-rate{
-	left: 50%;
-	top: 50%;
+	left: 39.7%;
+	top: 51.9%;
 	color: #fd3c00;
 }
 .refovod-item-02 .top-item-rate{
-	left: 50%;
-	top: 50%;
+	left: 53%;
+	top: 36%;
 	color: #ffec14;
 }
 /*refovod list end*/
@@ -526,7 +529,7 @@ img{
 	color: #fff;
 }
 .sect-rules-holder{
-	padding: 35px 0 69px;
+	padding: 76px 0 34px;
 	position: relative;
 }
 .sect-rules-bg{
@@ -535,7 +538,7 @@ img{
 	left: -31px;
 	top: 26px;
 	width: 498px;
-	max-width: 50%;
+	max-width: 53%;
 	background: url(../img/rules.png) no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -545,18 +548,13 @@ img{
 	display: block;
 	padding-top: 152.4%;
 }
-.sect-rules-title{
-	padding: 0 0 73px;
-}
+.sect-rules-title{ padding: 0 0 40px; }
 .sect-rules-title h2{
 	color: #fff;
+	padding: 0 0 21px;
 }
-.sect-rules-title h2:after{
-	border-color: #fdd200;
-}
-.sect-rules-content{
-	padding: 0 50px;
-}
+.sect-rules-title h2:after{ border-color: #fdd200; }
+.sect-rules-content{ padding: 0 50px; }
 .sect-rules-text{
 	width: 409px;
 	max-width: 60%;
